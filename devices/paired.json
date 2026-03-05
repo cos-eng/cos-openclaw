@@ -1,0 +1,64 @@
+{
+  "e6f8ffec0e4a1836e78fb58d06edb6d7585f7f35001e8fc911b099d43bb36c90": {
+    "deviceId": "e6f8ffec0e4a1836e78fb58d06edb6d7585f7f35001e8fc911b099d43bb36c90",
+    "publicKey": "P45XvY0q-Xdna1sgBUCJRfEdoaCjRU2lktNZnv-gMmw",
+    "platform": "linux",
+    "clientId": "cli",
+    "clientMode": "ui",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin"
+    ],
+    "approvedScopes": [
+      "operator.admin"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "9wncbecaCHOSp7ghLgTsgytMFyWlh0ivNBiev4pcv8s",
+        "role": "operator",
+        "scopes": [
+          "operator.admin"
+        ],
+        "createdAtMs": 1772627628969
+      }
+    },
+    "createdAtMs": 1772627628969,
+    "approvedAtMs": 1772627628969
+  },
+  "fc047b54c13e33567c2c684ff7158c65484359e454084a4ec422555c2de0adbf": {
+    "deviceId": "fc047b54c13e33567c2c684ff7158c65484359e454084a4ec422555c2de0adbf",
+    "publicKey": "JbGrkBEznZQJ3TS1qFmppFCf2IgMHHVjSihbVs8VzBA",
+    "platform": "linux",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.admin",
+      "operator.write"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.admin"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "GCNLhfynv7F3rhUS8erkiFn7zBQAjuz8h8AHAT9iDeE",
+        "role": "operator",
+        "scopes": [
+          "operator.admin"
+        ],
+        "createdAtMs": 1772730186301,
+        "rotatedAtMs": 1772735004188
+      }
+    },
+    "createdAtMs": 1772730186301,
+    "approvedAtMs": 1772735004188
+  }
+}

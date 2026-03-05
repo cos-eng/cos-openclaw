@@ -1,0 +1,6 @@
+credentials/
+*.lock
+sessions/
+*.jsonl
+auth/
+auth-profiles.json

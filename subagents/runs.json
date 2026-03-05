@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "runs": {
+    "a1177588-ec5a-402a-9692-8c8832a699ec": {
+      "runId": "a1177588-ec5a-402a-9692-8c8832a699ec",
+      "childSessionKey": "agent:intel-analyst:subagent:2d0aea5f-cb56-4c0d-bd36-482342fc80f2",
+      "requesterSessionKey": "agent:main:main",
+      "requesterOrigin": {
+        "channel": "webchat"
+      },
+      "requesterDisplayKey": "agent:main:main",
+      "task": "Find two high-potential prospect companies in the UK's BFSI vertical. Focus on companies that are likely to be early adopters of AI-driven marketing analytics. Provide a brief on each, including their estimated size, a key decision-maker (if available on LinkedIn), and a one-sentence thesis on why they are a good fit for Tatvic's new offerings.",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "spawnMode": "run",
+      "model": "google/gemini-2.5-pro",
+      "runTimeoutSeconds": 0,
+      "createdAt": 1772735021893,
+      "startedAt": 1772735022397,
+      "archiveAtMs": 1772738621893,
+      "cleanupHandled": true,
+      "retainAttachmentsOnKeep": false,
+      "endedAt": 1772735039363,
+      "outcome": {
+        "status": "ok"
+      },
+      "endedReason": "subagent-complete",
+      "endedHookEmittedAt": 1772735046706,
+      "cleanupCompletedAt": 1772735046706
+    }
+  }
+}

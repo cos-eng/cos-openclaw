@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.3",
+    "lastTouchedAt": "2026-03-05T06:36:39.913Z"
+  },
+  "browser": {
+    "enabled": true,
+    "headless": true,
+    "defaultProfile": "openclaw"
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "deepseek/deepseek-chat"
+      },
+      "imageModel": {
+        "primary": "google/gemini-2.5-flash-image-preview"
+      },
+      "models": {
+        "deepseek/deepseek-chat": {}
+      },
+      "workspace": "/home/node/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "sandbox": {
+        "browser": {
+          "enabled": true
+        }
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "subagents": {
+          "allowAgents": [
+            "ghostwriter",
+            "intel-analyst",
+            "operator"
+          ]
+        }
+      },
+      {
+        "id": "ghostwriter",
+        "name": "ghostwriter",
+        "workspace": "/home/node/.openclaw/agents/ghostwriter/workspace",
+        "agentDir": "/home/node/.openclaw/agents/ghostwriter/agent",
+        "model": "deepseek/deepseek-chat"
+      },
+      {
+        "id": "intel-analyst",
+        "name": "intel-analyst",
+        "workspace": "/home/node/.openclaw/agents/intel-analyst/workspace",
+        "agentDir": "/home/node/.openclaw/agents/intel-analyst/agent",
+        "model": "deepseek/deepseek-chat"
+      },
+      {
+        "id": "operator",
+        "name": "operator",
+        "workspace": "/home/node/.openclaw/agents/operator/workspace",
+        "agentDir": "/home/node/.openclaw/agents/operator/agent",
+        "model": "deepseek/deepseek-chat"
+      }
+    ]
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "channels": {
+    "googlechat": {
+      "enabled": true,
+      "groupPolicy": "open",
+      "serviceAccountFile": "/home/node/.openclaw/credentials/google-chat-service-account.json",
+      "audienceType": "app-url",
+      "audience": "https://cos-handler-kh22gehjua-el.a.run.app",
+      "webhookPath": "/googlechat",
+      "streamMode": "replace",
+      "dm": {
+        "policy": "open",
+        "allowFrom": [
+          "*"
+        ]
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789",
+        "http://35.200.184.122:18789"
+      ],
+      "dangerouslyDisableDeviceAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "d70daef274e76a9a458ddaab5ec96ef240039081e53e91fc08624fe4cc6a6004",
+      "allowTailscale": false
+    },
+    "trustedProxies": [
+      "127.0.0.1",
+      "172.18.0.0/16"
+    ],
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record"
+      ]
+    }
+  },
+  "skills": {
+    "entries": {
+      "apple-notes": {
+        "enabled": false
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "googlechat": {
+        "enabled": true
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "deepseek:default": {
+        "provider": "deepseek",
+        "mode": "api_key"
+      }
+    }
+  }
+}

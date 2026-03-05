@@ -32,7 +32,7 @@
     "providers": {
       "custom-api-deepseek-com": {
         "baseUrl": "https://api.deepseek.com",
-        "apiKey": "sk-2d52721815b444a1bff14b0d6e70300a",
+        "apiKey": "",
         "api": "openai-completions",
         "models": [
           {

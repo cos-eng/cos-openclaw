@@ -23,7 +23,7 @@
       "google:default": {
         "provider": "google",
         "mode": "api_key",
-        "apiKey": "AIzaSyDTkftH_kdL2mGjByr13r3sg0Gfs9fNiYA"
+        "apiKey": ""
       }
     }
   },
